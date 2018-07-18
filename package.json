@@ -1,0 +1,27 @@
+{
+  "name": "@osjs/dbus-provider",
+  "version": "1.0.0",
+  "description": "OS.js v3 DBus Provider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersevenrud/osjs-dbus-provider.git"
+  },
+  "keywords": [
+    "osjs"
+  ],
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andersevenrud/osjs-dbus-provider/issues"
+  },
+  "homepage": "https://github.com/andersevenrud/osjs-dbus-provider#readme",
+  "dependencies": {
+    "@osjs/common": "^3.0.0-alpha.12",
+    "dbus-native": "^0.2.5",
+    "uuid": "^3.3.2"
+  }
+}
