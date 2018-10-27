@@ -28,8 +28,6 @@
  * @licence Simplified BSD License
  */
 
-import {ServiceProvider} from '@osjs/common';
-
 const createInterface = core => ({uuid}) => {
   const {port, hostname} = window.location;
   const protocol = window.location.protocol.replace('http', 'ws');
@@ -94,7 +92,12 @@ const createInterface = core => ({uuid}) => {
   };
 };
 
-export class DBusServiceProvider extends ServiceProvider {
+export class DBusServiceProvider {
+
+  constructor(core, options = {}) {
+    this.core = core;
+    this.options = options;
+  }
 
   destroy() {
   }

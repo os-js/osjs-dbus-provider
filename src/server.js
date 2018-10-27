@@ -28,7 +28,7 @@
  * @licence Simplified BSD License
  */
 
-const {ServiceProvider, EventHandler} = require('@osjs/common');
+const {EventEmitter} = require('@osjs/event-emitter');
 const dbus = require('dbus-native');
 const uuidv1 = require('uuid/v1');
 const {promisify} = require('util');
@@ -37,7 +37,7 @@ const get = value => value instanceof Buffer
   ? value.toString('utf8')
   : value;
 
-class DBusSession extends EventHandler {
+class DBusSession extends EventEmitter {
 
   constructor(type, sessionId) {
     super('DBusSession');
@@ -162,11 +162,11 @@ class DBusSession extends EventHandler {
 
 }
 
-class DBusServiceProvider extends ServiceProvider {
+class DBusServiceProvider {
 
   constructor(core, options = {}) {
-    super(core, options);
-
+    this.core = core;
+    this.options = options;
     this.sessions = [];
   }
 
