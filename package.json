@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/andersevenrud/osjs-dbus-provider#readme",
   "dependencies": {
-    "@osjs/event-emitter": "^1.0.1",
+    "@osjs/event-emitter": "^1.0.4",
     "dbus-native": "^0.2.5",
     "uuid": "^3.3.2"
   }
