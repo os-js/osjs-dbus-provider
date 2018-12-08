@@ -27,13 +27,14 @@
  * @author  Anders Evenrud <andersevenrud@gmail.com>
  * @licence Simplified BSD License
  */
+const {EventEmitter} = require('@osjs/event-emitter');
 
 const createInterface = core => ({uuid}) => {
   const {port, hostname} = window.location;
   const protocol = window.location.protocol.replace('http', 'ws');
   const url = core.url(`/dbus/${uuid}`);
   const socket = new WebSocket(`${protocol}/${hostname}:${port}${url}`);
-  const bus = core.make('osjs/event-handler');
+  const bus = new EventEmitter();
 
   socket.onopen = ev => bus.emit('open', ev);
   socket.onclose = ev => bus.emit('close', ev);

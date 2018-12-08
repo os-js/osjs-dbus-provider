@@ -16,7 +16,12 @@
 In your initialization scripts:
 
 ```javascript
-import {DBusServiceProvider} from '@osjs/dbus-provider/src/client';
+// Client
+import {DBusServiceProvider} from '@osjs/dbus-provider';
+core.register(DBusServiceProvider);
+
+// Server
+const {DBusServiceProvider} = require('@osjs/dbus-provider/src/server.js');
 core.register(DBusServiceProvider);
 ```
 
