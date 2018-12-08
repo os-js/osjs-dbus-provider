@@ -180,6 +180,14 @@ class DBusServiceProvider {
     });
   }
 
+  provides() {
+    return [];
+  }
+
+  start() {
+
+  }
+
   init() {
     // Removes sessions
     const removeSession = sess => {
