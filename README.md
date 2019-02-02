@@ -18,11 +18,11 @@ In your initialization scripts:
 ```javascript
 // Client
 import {DBusServiceProvider} from '@osjs/dbus-provider';
-core.register(DBusServiceProvider);
+osjs.register(DBusServiceProvider);
 
 // Server
 const {DBusServiceProvider} = require('@osjs/dbus-provider/src/server.js');
-core.register(DBusServiceProvider);
+osjs.register(DBusServiceProvider);
 ```
 
 ## Client Example
