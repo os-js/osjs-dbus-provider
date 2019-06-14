@@ -34,6 +34,7 @@
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/runtime": "^7.1.2",
+    "@osjs/eslint-config": "^1.0.0",
     "babel-loader": "^8.0.4",
     "eslint": "^5.6.1",
     "webpack": "^4.20.2",
