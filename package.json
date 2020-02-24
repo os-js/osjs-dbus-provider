@@ -1,7 +1,7 @@
 {
   "name": "@osjs/dbus-provider",
-  "version": "1.0.3",
-  "description": "OS.js v3 DBus Provider",
+  "version": "1.0.4",
+  "description": "OS.js DBus Provider",
   "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
