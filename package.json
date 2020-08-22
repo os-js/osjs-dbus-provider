@@ -31,10 +31,10 @@
   },
   "homepage": "https://github.com/andersevenrud/osjs-dbus-provider#readme",
   "devDependencies": {
-    "@osjs/dev-meta": "^1.0.3"
+    "@osjs/dev-meta": "^1.1.2"
   },
   "dependencies": {
-    "@osjs/event-emitter": "^1.0.4",
+    "@osjs/event-emitter": "^1.0.9",
     "dbus-native": "^0.2.5",
     "uuid": "^3.3.2"
   },
