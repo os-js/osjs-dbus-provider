@@ -4,7 +4,7 @@ export class DBusServiceProvider extends ServiceProvider {}
 
 export interface DBusInterface {
   subscribe(member: string, callback: Function): void;
-  get(prop: string): Promise<any>;
+  get<T>(prop: string): Promise<T>;
   set(prop: string, value: any): Promise<undefined>;
   call(memeber: string, ...args: any): Promise<any>;
 }
