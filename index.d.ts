@@ -2,6 +2,11 @@ import { ServiceProvider } from '@osjs/common';
 
 export class DBusServiceProvider extends ServiceProvider {}
 
+export interface DBusContract {
+  systemBus(): Promise<DBusConnection>;
+  sessionBus(): Promise<DBusConnection>;
+}
+
 export interface DBusInterface {
   subscribe(member: string, callback: Function): void;
   get<T>(prop: string): Promise<T>;
