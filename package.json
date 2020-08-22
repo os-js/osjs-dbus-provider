@@ -1,6 +1,6 @@
 {
   "name": "@osjs/dbus-provider",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "OS.js DBus Provider",
   "main": "dist/main.js",
   "scripts": {
